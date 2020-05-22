@@ -4,6 +4,7 @@
 } */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;800&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 .container-flex{
   background-color:whitesmoke;
 
@@ -609,3 +610,108 @@ h5{
 .fa.fa-bars:hover{
 transform: scale(1)!important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+.cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+}
+.cd-words-wrapper b.is-visible {
+  position: relative;
+}
+.no-js .cd-words-wrapper b {
+  opacity: 0;
+}
+.no-js .cd-words-wrapper b.is-visible {
+  opacity: 1;
+}
+
+.cd-headline.clip span {
+  display: inline-block;
+  padding: .2em 0;
+}
+.cd-headline.clip .cd-words-wrapper {
+  overflow: hidden;
+  vertical-align: middle;
+}
+.cd-headline.clip .cd-words-wrapper::after {
+  /* line */
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  /* background-color: */
+}
+.cd-headline.clip b {
+  opacity: 0;
+}
+.cd-headline.clip b.is-visible {
+  opacity: 1;
+}
+#bgco{
+  font-family: 'Fredericka the Great', cursive;
+  background-color: inherit;
+  font-size: 60px;
+  color: whitesmoke;
+  vertical-align: middle;
+
+}
+.cd-intro{
+  margin-top: 170px;
+  margin-left: 30px;
+  /* align-self: center!important;
+  align-items: center!important;
+  align-content: center!important; */
+  /* vertical-align: middle; */
+  /* margin-top: 50px; */
+  /* align-items: center!important;
+  text-align: center; */
+}
+#notb{
+  font-style: normal!important;
+  font-weight: 400;
+}
+.cd-headline.clip .cd-words-wrapper::after {
+  /* vertical bar */
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 90%;
+  width: 1px;
+  background-color: #aebcb9;
+}
+
+#bgc{
+  display: none;
+}
+
