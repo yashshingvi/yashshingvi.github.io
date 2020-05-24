@@ -2,6 +2,7 @@
 //     interval: 4000
 //   })
 setTimeout(function(){ $("body").addClass("loaded"); }, 500);
+setTimeout(function(){ $("#loader-wrapper").css("display", "None"); }, 2500);//remove the top layer
 
 //   $(".main").onepage_scroll();
 

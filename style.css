@@ -779,3 +779,19 @@ transform: scale(1)!important;
   .no-js h1 {
       color: #222222;
   }
+
+
+  #content{
+    /* transform: scale(0.8);
+     */
+     -webkit-transform: scale(0.5);  /* Chrome, Opera 15+, Safari 3.1+ */
+          -ms-transform: scale(0.5);  /* IE 9 */
+              transform: scale(0.5);  /* Firefox 16+, IE 10+, Opera */
+}
+.loaded #content{
+    transition: transform 1s;
+    /* transform: scale(1); */
+    -webkit-transform: scale(1);  /* Chrome, Opera 15+, Safari 3.1+ */
+          -ms-transform: scale(1);  /* IE 9 */
+              transform: scale(1);  /* Firefox 16+, IE 10+, Opera */
+}
