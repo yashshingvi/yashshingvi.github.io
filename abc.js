@@ -1,8 +1,9 @@
 // $('.carousel').carousel({
 //     interval: 4000
 //   })
-setTimeout(function(){ $("body").addClass("loaded"); }, 500);
-setTimeout(function(){ $("#loader-wrapper").css("display", "None"); }, 2500);//remove the top layer
+// setTimeout(function(){ $("body").addClass("loaded"); }, 500);
+// setTimeout(function(){ $("#loader-wrapper").css("display", "None"); }, 2500);
+//remove the top layer
 
 //   $(".main").onepage_scroll();
 
@@ -107,3 +108,12 @@ $(document).ready(function(){
 // $().tooltip(function(){
 //     data-Animation="false";
 // })
+document.onreadystatechange = function() { 
+  if (document.readyState !== "complete") { 
+
+  } else {
+      $("body").addClass("loaded"); 
+      setTimeout(function(){ $("#loader-wrapper").css("display", "None"); }, 1000);
+
+  } 
+}; 
