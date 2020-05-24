@@ -1,6 +1,7 @@
 // $('.carousel').carousel({
 //     interval: 4000
 //   })
+setTimeout(function(){ $("body").addClass("loaded"); }, 500);
 
 //   $(".main").onepage_scroll();
 
