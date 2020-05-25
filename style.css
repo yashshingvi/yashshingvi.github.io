@@ -11,7 +11,7 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    /* overflow-x: hidden;  */
 }
 .container-flex{
   background-color:whitesmoke;
@@ -848,7 +848,7 @@ transform: scale(1)!important;
              
              
 }
-.sl1{
+.sl1,#svg1{
   position: relative;
   /* left :100%; */
   transition: transform 1.5s;
@@ -892,7 +892,57 @@ transform: scale(1)!important;
   fill: black;
   padding: 0.2em;
   margin: 0.2em;
-  font-size: 120px;
+  font-size: 70px;
   letter-spacing: 0.2em; 
   /* background-color: yellow; */
 }
+#socia{
+  align-self: right;
+  right: 0;
+}
+ #socia{
+  padding: 0px;
+  margin: 0px;
+  
+}
+#foo{
+  font-size: 70px!important;
+  
+}
+#smal{
+  font-size: 20px!important;
+}
+/* path {
+  transition: transform 0.5s;
+  
+  transform-origin: 100% 0%;
+}
+path:hover{
+  transform: rotate(80deg);
+} */
+/* #curve2,svg { */
+  /* transform-origin: bottom right; */
+  /* transform-box: fill-box; */
+  /* transform-origin: 100% 0%;
+  animation: spin 6s cubic-bezier(.8, 0, .2, 1) infinite;
+  
+  @keyframes spin {
+    50% { transform: rotate(45deg); }
+    100% { transform: rotate(0deg); }
+  }
+} */
+text {
+  transition: transform 4s;
+  transform-origin: 100% 0%;
+  /* animation:spin 4s linear ; */
+  
+}
+
+#svg1{
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+/* #circ{
+  fill: transparent!important;
+} */
