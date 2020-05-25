@@ -130,6 +130,9 @@ h6{
 }
 @media all and (min-width: 1025px)
 {
+  #hii{
+    font-size: 150px;
+  }
 .sti{
   /* position: -webkit-sticky; */
    /* Full-height: remove this if you want "auto" height */
@@ -187,6 +190,9 @@ h6{
 } */
 @media all and (max-width: 400px) /*iphone7*/
 {
+  #hii{
+    font-size: 80px;
+  }
   .sl1{
     /* background-color:red; */
     background-image: url("New folder/final1400x500.jpg");
@@ -247,6 +253,9 @@ h6{
 }
 /*larger phones*/
 @media only screen and (min-width: 399px) and (max-width: 699px){
+  #hii{
+    font-size: 100px;
+  }
   .sl1{
     background-image: url("New folder/final1800x700.jpg");
     /* background-attachment: fixed;
@@ -294,6 +303,9 @@ h6{
 }
 /*ipad*/
 @media only screen and (min-width: 700px) and (max-width: 1024px) and (orientation : landscape){
+  #hii{
+    font-size: 130px;
+  }
   .sl1{
     background-image: url("New folder/final1800x700.jpg");
     /* background-attachment: fixed;
@@ -341,6 +353,9 @@ h6{
 }
 /*ipad*/
 @media only screen and (min-width: 700px) and (max-width: 1024px) and (orientation : portrait){
+  #hii{
+    font-size: 130px;
+  }
   .sl1{
     background-image: url("New folder/final1800x700.jpg");
     /* background-attachment: fixed;
@@ -728,7 +743,7 @@ transform: scale(1)!important;
 #hii{
   /* font-family: 'Merriweather Sans', sans-serif; */
   text-align: center;
-  font-size: 150px;
+  
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   opacity: 50%;
