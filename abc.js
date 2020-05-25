@@ -113,7 +113,12 @@ document.onreadystatechange = function() {
 
   } else {
       $("body").addClass("loaded"); 
+      $(".sticky-top").css("-webkit-transform","translateX(0%)");$(".sticky-top").css("transform","translateX(0%)");$(".sticky-top").css("-ms-transform","translateX(0%)");$(".sticky-top").css("position","sticky");
+      $(".jumbotron").css("-webkit-transform","translateX(0%)");$(".jumbotron").css("transform","translateX(0%)");$(".jumbotron").css("-ms-transform","translateX(0%)");
+      $(".sl1").css("-webkit-transform","translateX(0%)");$(".sl1").css("-ms-transform","translateX(0%)");$(".sl1").css("transform","translateX(0%)");
       setTimeout(function(){ $("#loader-wrapper").css("display", "None"); }, 1000);
-
+      // setTimeout(function(){$(".sticky-top").css("top","0");$(".sticky-top").css("left","100%"); $(".sticky-top").css("position","relative");}, 3000);
+      // setTimeout(function(){ $(".sticky-top").css("-webkit-transform","translateX(0%)");$(".sticky-top").css("position","sticky");}, 100);
+      // $(".sticky-top").css("position","sticky");
   } 
 }; 
