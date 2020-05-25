@@ -108,17 +108,18 @@ $(document).ready(function(){
 // $().tooltip(function(){
 //     data-Animation="false";
 // })
+
 document.onreadystatechange = function() { 
   if (document.readyState !== "complete") { 
 
   } else {
       $("body").addClass("loaded"); 
       $("body").css("background-color","#222222"); 
-      setTimeout(function(){$(".sticky-top").css("-webkit-transform","translateX(0%)");$(".sticky-top").css("transform","translateX(0%)");$(".sticky-top").css("-ms-transform","translateX(0%)");$(".sticky-top").css("position","sticky");}, 3000);
+      setTimeout(function(){$("#stickytop").css("-webkit-transform","translateX(0%)");$("#stickytop").css("transform","translateX(0%)");$("#stickytop").css("-ms-transform","translateX(0%)");$("#stickytop").css("position","sticky");}, 3000);
       setTimeout(function(){$(".jumbotron").css("-webkit-transform","translateX(0%)");$(".jumbotron").css("transform","translateX(0%)");$(".jumbotron").css("-ms-transform","translateX(0%)");}, 3000);
       setTimeout(function(){$(".sl1").css("-webkit-transform","translateX(0%)");$(".sl1").css("-ms-transform","translateX(0%)");$(".sl1").css("transform","translateX(0%)");}, 2000);
       setTimeout(function(){ $("#loader-wrapper").css("display", "None"); }, 1000);
-      setTimeout(function(){ $("#hii").css("display", "None"); }, 5000);
+      setTimeout(function(){ $("#hii").css("display", "None"); }, 2500);
       // setTimeout(function(){$(".sticky-top").css("top","0");$(".sticky-top").css("left","100%"); $(".sticky-top").css("position","relative");}, 3000);
       // setTimeout(function(){ $(".sticky-top").css("-webkit-transform","translateX(0%)");$(".sticky-top").css("position","sticky");}, 100);
       // $(".sticky-top").css("position","sticky");
