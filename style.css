@@ -1073,6 +1073,13 @@ path{
 #emo2{
   display: none;
 }
-#emo3{
+#emo3,#emo4{
   display: none;
+}
+#coffee{
+  opacity: 40%;
+}
+#coffee:hover{
+  opacity: 100%;
+  color: white;
 }

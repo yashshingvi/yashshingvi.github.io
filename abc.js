@@ -236,6 +236,15 @@ else{
         $("#hidehome").css("display", "contents");
                 });
       });     
+      $("#coffee").mouseover(function(){
+        //   $("p").css("-webkit-animation", "fadein 2s");
+        $("#emo4").css("display", "contents");
+        
+        $("#coffee").mouseout(function(){
+          $("#emo4").css("display", "none");
+          
+                  });
+        });   
     
 });
  
