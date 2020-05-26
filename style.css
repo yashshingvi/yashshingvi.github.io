@@ -138,6 +138,9 @@ h6{
 }
 @media all and (min-width: 1025px)
 {
+  #foo{
+    font-size: 92px;
+  }
   #hii{
     font-size: 150px;
   }
@@ -201,11 +204,34 @@ h6{
   /* svg{
     display: none;
   } */
+  /* #cdy{
+    dy:0;
+  } */
+  /* path{
+    transform-origin: 50% 50%;
+    transform: scale(0.3);
+  } */
+ 
   #circ{
-    opacity: 0;
-    display: none;
-    visibility: hidden!important;
-    fill:transparent!important;
+
+    /* visibility: hidden!important; */
+    fill: transparent;
+    stroke: white;
+    stroke-opacity: 50%;
+
+  }
+  /* path{ */
+    /* transform: translate(95px, 115px); */
+  /* } */
+  #foo{
+    /* transform: translateY(40%); */
+    /* transform: translate(295px, 115px); */
+    font-size: 63px;
+    /* word-spacing: 65px; */
+    fill: black!important;
+    stroke: white!important;
+    letter-spacing: 0.3em;
+    /* letter-spacing: 10px; */
   }
   #hii{
     font-size: 80px;
@@ -274,10 +300,25 @@ h6{
     display: none;
   } */
   #circ{
-    opacity: 0;
-    display: none;
-    visibility: hidden!important;
-    fill:transparent!important;
+
+    /* visibility: hidden!important; */
+    fill: transparent;
+    stroke: white;
+    stroke-opacity: 50%;
+
+  }
+  /* path{ */
+    /* transform: translate(95px, 115px); */
+  /* } */
+  #foo{
+    /* transform: translateY(40%); */
+    /* transform: translate(295px, 115px); */
+    font-size: 63px;
+    /* word-spacing: 65px; */
+    fill: black!important;
+    stroke: white!important;
+    letter-spacing: 0.3em;
+    /* letter-spacing: 10px; */
   }
   #hii{
     font-size: 100px;
@@ -329,8 +370,27 @@ h6{
 }
 /*ipad*/
 @media only screen and (min-width: 700px) and (max-width: 1024px) and (orientation : landscape){
-  svg{
-    display: none;
+ 
+  #circ{
+
+    /* visibility: hidden!important; */
+    fill: transparent;
+    stroke: white;
+    stroke-opacity: 50%;
+
+  }
+  /* path{ */
+    /* transform: translate(95px, 115px); */
+  /* } */
+  #foo{
+    /* transform: translateY(40%); */
+    /* transform: translate(295px, 115px); */
+    font-size: 63px;
+    /* word-spacing: 65px; */
+    fill: black!important;
+    stroke: white!important;
+    letter-spacing: 0.3em;
+    /* letter-spacing: 10px; */
   }
   #hii{
     font-size: 130px;
@@ -382,8 +442,26 @@ h6{
 }
 /*ipad*/
 @media only screen and (min-width: 700px) and (max-width: 1024px) and (orientation : portrait){
-  svg{
-    display: none;
+  #circ{
+
+    /* visibility: hidden!important; */
+    fill: transparent;
+    stroke: white;
+    stroke-opacity: 50%;
+
+  }
+  /* path{ */
+    /* transform: translate(95px, 115px); */
+  /* } */
+  #foo{
+    /* transform: translateY(40%); */
+    /* transform: translate(295px, 115px); */
+    font-size: 63px;
+    /* word-spacing: 65px; */
+    fill: black!important;
+    stroke: white!important;
+    letter-spacing: 0.3em;
+    /* letter-spacing: 10px; */
   }
   #hii{
     font-size: 130px;
@@ -923,13 +1001,16 @@ transform: scale(1)!important;
 }
 #foo{
   font-family: 'Merriweather Sans', sans-serif!important;
-  font-size: 92px!important;
+  
   /* letter-spacing: 0.1em; */
   stroke: black;
   color: white;
   fill: white;
   /* opacity: 65%; */
   
+}
+#circ{
+  visibility: hidden;
 }
 #smal{
   font-size: 20px!important;
@@ -965,8 +1046,16 @@ text {
   right: 0;
   top: 0;
 }
-#circ{
-  fill: transparent!important;
-  opacity: 0;
+path{
+  visibility: none;
+  fill: transparent;
 }
+
+#socia{
+  background-color: transparent;
+}
+/* #circ{
+  visibility: hidden!important;
+  fill: transparent;
+} */
 /*  */

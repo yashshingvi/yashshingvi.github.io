@@ -188,8 +188,20 @@ function Scroll() {
 //       $("text").css("transform", `rotate('${document.body.scrollTop}'deg)`);
 //    }
 // }
-
-
+var f = document.querySelector("#foo");
+var g = document.querySelector("#circ");
+$(document).ready(function(){
+if($(window).width()>=1025){
+  f.setAttribute("dy", "30");
+  // f.dy="30";
+}
+else{
+  // $(document).getElementsById("foo")[0].setAttribute("dy", "0");
+  f.setAttribute("dy", "-60");
+  g.setAttribute("r", "180");
+  // f.dy="-50";
+}
+});
 
 
   $(document).ready(function(){  
