@@ -42,21 +42,25 @@ function Scroll() {
     //and
     //start/end of scroll event for other browsers
     if($(window).scrollTop()>=530 && $(window).scrollTop() <960){
-      $("#foo").css("transform", `rotate(${530/7}deg)`);
+     
       $("#foo").css("-webkit-transform", `rotate(${530/7}deg)`);
+      $("#foo").css("-ms-transform", `rotate(${530/7}deg)`);
+      $("#foo").css("transform", `rotate(${530/7}deg)`);
   }
   else if($(window).scrollTop()>=1952) {
     //   do nothing
     }
   else{
-  $("#foo").css("transform", `rotate(${$(window).scrollTop()/7}deg)`);
+  
   $("#foo").css("-webkit-transform", `rotate(${$(window).scrollTop()/7}deg)`);
+  $("#foo").css("-ms-transform", `rotate(${$(window).scrollTop()/7}deg)`);
+  $("#foo").css("transform", `rotate(${$(window).scrollTop()/7}deg)`);
   }
   if($(window).scrollTop()>=1440){
     $(".navbar").css("background-color", "black");
   }
   else{
-    $(".navbar").css("background-color", "whitesmoke");
+    $(".navbar").css("background-color", "#222222");
   }
     // console.log($(window).scrollTop());
     // console.log("end");
@@ -245,6 +249,21 @@ else{
           
                   });
         });   
+
+        $("#brandn").mouseover(function(){
+          //   $("p").css("-webkit-animation", "fadein 2s");
+          $("#emo5").css("display", "contents");
+          $("#brandn").css("display", "none");
+          $("#emo3").css("display", "contents");
+          $("#hidehome").css("display", "none");
+          // mouse out from replaced emos 
+          $("#emo5").mouseout(function(){
+            $("#emo5").css("display", "none");
+            $("#brandn").css("display", "contents");
+            $("#emo3").css("display", "none");
+            $("#hidehome").css("display", "contents");
+                    });
+          });     
     
 });
  
