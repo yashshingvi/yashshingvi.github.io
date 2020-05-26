@@ -19,21 +19,21 @@ document.addEventListener("scroll", Scroll, false);
 
 function ScrollStart() {
     //start of scroll event for iOS
-    if($(window).scrollTop()>=530 && $(window).scrollTop() <960){
-      $("#foo").css("transform", `rotate(${530/7}deg)`);
-  }
-  else if($(window).scrollTop()>=1952) {
-    //   do nothing
-    }
-  else{
-  $("#foo").css("transform", `rotate(${$(window).scrollTop()/7}deg)`);
-  }
-  if($(window).scrollTop()>=1440){
-    $(".navbar").css("background-color", "black");
-  }
-  else{
-    $(".navbar").css("background-color", "whitesmoke");
-  }
+  //   if($(window).scrollTop()>=530 && $(window).scrollTop() <960){
+  //     $("#foo").css("transform", `rotate(${530/7}deg)`);
+  // }
+  // else if($(window).scrollTop()>=1952) {
+  //   //   do nothing
+  //   }
+  // else{
+  // $("#foo").css("transform", `rotate(${$(window).scrollTop()/7}deg)`);
+  // }
+  // if($(window).scrollTop()>=1440){
+  //   $(".navbar").css("background-color", "black");
+  // }
+  // else{
+  //   $(".navbar").css("background-color", "whitesmoke");
+  // }
 
 }
 
@@ -43,12 +43,14 @@ function Scroll() {
     //start/end of scroll event for other browsers
     if($(window).scrollTop()>=530 && $(window).scrollTop() <960){
       $("#foo").css("transform", `rotate(${530/7}deg)`);
+      $("#foo").css("-webkit-transform", `rotate(${530/7}deg)`);
   }
   else if($(window).scrollTop()>=1952) {
     //   do nothing
     }
   else{
   $("#foo").css("transform", `rotate(${$(window).scrollTop()/7}deg)`);
+  $("#foo").css("-webkit-transform", `rotate(${$(window).scrollTop()/7}deg)`);
   }
   if($(window).scrollTop()>=1440){
     $(".navbar").css("background-color", "black");
