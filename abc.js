@@ -36,7 +36,7 @@ function myFunction() {
 
     // $("text").css("transform", "rotate( ${document.documentElement.scrollTop} deg)");
     // console.log("Calling this function");
-    console.log(document.documentElement.scrollTop);
+    // console.log(document.documentElement.scrollTop);
     // console.log("'"${document.body.scrollTop}"'");
 }
 

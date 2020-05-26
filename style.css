@@ -885,7 +885,7 @@ transform: scale(1)!important;
   z-index: 200000;
 
 }
-#fo,text {
+/* #fo,text {
   font-family: 'Merriweather Sans', sans-serif!important;
 
   stroke: white;
@@ -895,7 +895,7 @@ transform: scale(1)!important;
   font-size: 70px;
   letter-spacing: 0.2em; 
   /* background-color: yellow; */
-}
+/* }  */
 #socia{
   align-self: right;
   right: 0;
@@ -906,7 +906,13 @@ transform: scale(1)!important;
   
 }
 #foo{
-  font-size: 70px!important;
+  font-family: 'Merriweather Sans', sans-serif!important;
+  font-size: 92px!important;
+  /* letter-spacing: 0.1em; */
+  stroke: black;
+  color: white;
+  fill: white;
+  /* opacity: 65%; */
   
 }
 #smal{
