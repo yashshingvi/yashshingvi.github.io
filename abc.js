@@ -28,6 +28,12 @@ function ScrollStart() {
   else{
   $("#foo").css("transform", `rotate(${$(window).scrollTop()/7}deg)`);
   }
+  if($(window).scrollTop()>=1440){
+    $(".navbar").css("background-color", "black");
+  }
+  else{
+    $(".navbar").css("background-color", "whitesmoke");
+  }
 
 }
 
