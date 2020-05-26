@@ -16,7 +16,7 @@ $('window').on('touchmove', function(event) {
 
   event.preventDefault(); 
 
-  var distanceY = window.pageYOffset
+  var distanceY = window.scrollY
   if (distanceY > 0) {
     if(distanceY>=530 && distanceY <960){
       $("#foo").css("transform", `rotate(${530/7}deg)`);
