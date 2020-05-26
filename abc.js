@@ -19,7 +19,16 @@ document.addEventListener("scroll", Scroll, false);
 
 function ScrollStart() {
     //start of scroll event for iOS
-    console.log("start");
+    if($(window).scrollTop()>=530 && $(window).scrollTop() <960){
+      $("#foo").css("transform", `rotate(${530/7}deg)`);
+  }
+  else if($(window).scrollTop()>=1952) {
+    //   do nothing
+    }
+  else{
+  $("#foo").css("transform", `rotate(${$(window).scrollTop()/7}deg)`);
+  }
+
 }
 
 function Scroll() {
@@ -35,9 +44,9 @@ function Scroll() {
   else{
   $("#foo").css("transform", `rotate(${$(window).scrollTop()/7}deg)`);
   }
-    console.log($(window).scrollTop());
-    console.log("end");
-    console.log("end");
+    // console.log($(window).scrollTop());
+    // console.log("end");
+    // console.log("end");
 }
 
 
@@ -291,10 +300,10 @@ document.onreadystatechange = function() {
   } else {
       $("body").addClass("loaded"); 
       $("body").css("background-color","#222222"); 
-      setTimeout(function(){$("#stickytop").css("-webkit-transform","translateX(0%)");$("#stickytop").css("transform","translateX(0%)");$("#stickytop").css("-ms-transform","translateX(0%)");$("#stickytop").css("position","sticky");}, 3000);
+      setTimeout(function(){$("#stickytop").css("-webkit-transform","translateX(0%)");$("#stickytop").css("transform","translateX(0%)");$("#stickytop").css("-ms-transform","translateX(0%)");$("#stickytop").css("position","sticky");$("#stickytop").css("top","0");}, 3000);
       setTimeout(function(){$(".jumbotron").css("-webkit-transform","translateX(0%)");$(".jumbotron").css("transform","translateX(0%)");$(".jumbotron").css("-ms-transform","translateX(0%)");}, 3000);
       setTimeout(function(){$(".sl1").css("-webkit-transform","translateX(0%)");$(".sl1").css("-ms-transform","translateX(0%)");$(".sl1").css("transform","translateX(0%)");}, 2000);
-      setTimeout(function(){$("#svg1").css("-webkit-transform","translateX(0%)");$("#svg1").css("transform","translateX(0%)");$("#svg1").css("-ms-transform","translateX(0%)");$("#svg1").css("position","fixed");}, 3000);
+      setTimeout(function(){$("#svg1").css("-webkit-transform","translateX(0%)");$("#svg1").css("transform","translateX(0%)");$("#svg1").css("-ms-transform","translateX(0%)");$("#svg1").css("position","fixed");}, 2800);
       setTimeout(function(){ $("#loader-wrapper").css("display", "None"); }, 1000);
       setTimeout(function(){ $("#hii").css("display", "None"); }, 2500);
       // setTimeout(function(){$(".sticky-top").css("top","0");$(".sticky-top").css("left","100%"); $(".sticky-top").css("position","relative");}, 3000);
