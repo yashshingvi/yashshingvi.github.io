@@ -14,6 +14,34 @@ var b = document.querySelector("text");
 // }
 
 
+document.addEventListener("touchmove", ScrollStart, false);
+document.addEventListener("scroll", Scroll, false);
+
+function ScrollStart() {
+    //start of scroll event for iOS
+    console.log("start");
+}
+
+function Scroll() {
+    //end of scroll event for iOS
+    //and
+    //start/end of scroll event for other browsers
+    if($(window).scrollTop()>=530 && $(window).scrollTop() <960){
+      $("#foo").css("transform", `rotate(${530/7}deg)`);
+  }
+  else if($(window).scrollTop()>=1952) {
+    //   do nothing
+    }
+  else{
+  $("#foo").css("transform", `rotate(${$(window).scrollTop()/7}deg)`);
+  }
+    console.log($(window).scrollTop());
+    console.log("end");
+    console.log("end");
+}
+
+
+
 // $('window').on('touchmove', function(event) {
 //   console.log("touchMove");
 //   event.preventDefault(); 
@@ -32,53 +60,53 @@ var b = document.querySelector("text");
 
 //   }
 // });
-setTimeout(function(){console.log($(window).scrollTop()); }, 100);
-setTimeout(function(){$(document.body).on('touchmove', myFunction2());  }, 100);
-$(document.body).on('touchmove', myFunction2()); 
-window.onscroll = function() {myFunction()};
+// setTimeout(function(){console.log($(window).scrollTop()); }, 100);
+// setTimeout(function(){$(document.body).on('touchmove', myFunction2());  }, 100);
+// $(document.body).on('touchmove', myFunction2()); 
+// window.onscroll = function() {myFunction()};
 // console.log(document.documentElement.scrollTop);
-function myFunction() {
+// function myFunction() {
   // if(document.documentElement.scrollTop>=0 && document.documentElement.scrollTop <532){
   //   $("#foo").css("transform", `rotate(${document.documentElement.scrollTop/7}deg)`);
   // }
   // else if(document.documentElement.scrollTop>960 && document.documentElement.scrollTop <1400){
   //   $("#foo").css("transform", `rotate(${document.documentElement.scrollTop/7}deg)`);
   // }
-    if(document.documentElement.scrollTop>=530 && document.documentElement.scrollTop <960){
-      $("#foo").css("transform", `rotate(${530/7}deg)`);
-  }
-  else if(document.documentElement.scrollTop>=1952) {
-    //   do nothing
-    }
-  else{
-  $("#foo").css("transform", `rotate(${document.documentElement.scrollTop/7}deg)`);
-  }
+  //   if(document.documentElement.scrollTop>=530 && document.documentElement.scrollTop <960){
+  //     $("#foo").css("transform", `rotate(${530/7}deg)`);
+  // }
+  // else if(document.documentElement.scrollTop>=1952) {
+  //   //   do nothing
+  //   }
+  // else{
+  // $("#foo").css("transform", `rotate(${document.documentElement.scrollTop/7}deg)`);
+  // }
 
 
     // $("text").css("transform", "rotate( ${document.documentElement.scrollTop} deg)");
     // console.log("Calling this function");
     // console.log(document.documentElement.scrollTop);
     // console.log("'"${document.body.scrollTop}"'");
-}
-function myFunction2() {
-  console.log("touchMove");
+// }
+// function myFunction2() {
+//   console.log(window.pageYOffset);
   // if(document.documentElement.scrollTop>=0 && document.documentElement.scrollTop <532){
   //   $("#foo").css("transform", `rotate(${document.documentElement.scrollTop/7}deg)`);
   // }
   // else if(document.documentElement.scrollTop>960 && document.documentElement.scrollTop <1400){
   //   $("#foo").css("transform", `rotate(${document.documentElement.scrollTop/7}deg)`);
   // }
-    if($(window).scrollTop()>=530 && $(window).scrollTop() <960){
-      $("#foo").css("transform", `rotate(${530/7}deg)`);
-  }
-  else if($(window).scrollTop()>=1952) {
+  //   if($(window).scrollTop()>=530 && $(window).scrollTop() <960){
+  //     $("#foo").css("transform", `rotate(${530/7}deg)`);
+  // }
+  // else if($(window).scrollTop()>=1952) {
     //   do nothing
-    }
-  else{
-  $("#foo").css("transform", `rotate(${$(window).scrollTop()/7}deg)`);
-  }
+//     }
+//   else{
+//   $("#foo").css("transform", `rotate(${$(window).scrollTop()/7}deg)`);
+//   }
 
-}
+// }
 
 
 // window.onscroll = function() {myFunction()};
