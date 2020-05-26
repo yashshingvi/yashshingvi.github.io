@@ -15,7 +15,7 @@ var b = document.querySelector("text");
 
 
 // $('window').on('touchmove', function(event) {
-
+//   console.log("touchMove");
 //   event.preventDefault(); 
 
 //   var distanceY = window.scrollY
@@ -32,6 +32,8 @@ var b = document.querySelector("text");
 
 //   }
 // });
+setTimeout(function(){console.log($(window).scrollTop()); }, 100);
+setTimeout(function(){$(document.body).on('touchmove', myFunction2());  }, 100);
 $(document.body).on('touchmove', myFunction2()); 
 window.onscroll = function() {myFunction()};
 // console.log(document.documentElement.scrollTop);
@@ -59,20 +61,21 @@ function myFunction() {
     // console.log("'"${document.body.scrollTop}"'");
 }
 function myFunction2() {
+  console.log("touchMove");
   // if(document.documentElement.scrollTop>=0 && document.documentElement.scrollTop <532){
   //   $("#foo").css("transform", `rotate(${document.documentElement.scrollTop/7}deg)`);
   // }
   // else if(document.documentElement.scrollTop>960 && document.documentElement.scrollTop <1400){
   //   $("#foo").css("transform", `rotate(${document.documentElement.scrollTop/7}deg)`);
   // }
-    if($(window).height()>=530 && $(window).height() <960){
+    if($(window).scrollTop()>=530 && $(window).scrollTop() <960){
       $("#foo").css("transform", `rotate(${530/7}deg)`);
   }
-  else if($(window).height()>=1952) {
+  else if($(window).scrollTop()>=1952) {
     //   do nothing
     }
   else{
-  $("#foo").css("transform", `rotate(${$(window).height()/7}deg)`);
+  $("#foo").css("transform", `rotate(${$(window).scrollTop()/7}deg)`);
   }
 
 }

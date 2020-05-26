@@ -203,6 +203,8 @@ h6{
   } */
   #circ{
     display: none;
+    visibility: hidden;
+    fill:transparent!important;
   }
   #hii{
     font-size: 80px;
@@ -272,6 +274,8 @@ h6{
   } */
   #circ{
     display: none;
+    visibility: hidden;
+    fill:transparent!important;
   }
   #hii{
     font-size: 100px;
