@@ -198,14 +198,14 @@ h6{
 } */
 @media all and (max-width: 400px) /*iphone7*/
 {
-  /* svg{
+  svg{
     display: none;
-  } */
-  #circ{
+  }
+  /* #circ{
     display: none;
     visibility: hidden;
     fill:transparent!important;
-  }
+  } */
   #hii{
     font-size: 80px;
   }
@@ -269,14 +269,14 @@ h6{
 }
 /*larger phones*/
 @media only screen and (min-width: 399px) and (max-width: 699px){
-  /* svg{
+  svg{
     display: none;
-  } */
-  #circ{
+  }
+  /* #circ{
     display: none;
     visibility: hidden;
     fill:transparent!important;
-  }
+  } */
   #hii{
     font-size: 100px;
   }
