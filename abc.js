@@ -225,9 +225,40 @@ else{
     $("#test").mouseout(function(){
                 $(".fa").css("animation", "none");
               });
-    });     
+    }); 
+
+    $(".lead").mouseover(function(){
+      //   $("p").css("-webkit-animation", "fadein 2s");
+      $("#emo3").css("display", "contents");
+      $("#hidehome").css("display", "none");
+      $(".lead").mouseout(function(){
+        $("#emo3").css("display", "none");
+        $("#hidehome").css("display", "contents");
+                });
+      });     
+    
 });
  
+$(document).ready(function(){  
+  $("#bgco").mouseover(function(){
+  //   $("p").css("-webkit-animation", "fadein 2s");
+  $("#emo1").css("display", "contents");
+
+  $("#bgco").mouseout(function(){
+              $("#emo1").css("display", "none");
+            });
+  });     
+});
+$(document).ready(function(){  
+  $(".h111").mouseover(function(){
+  //   $("p").css("-webkit-animation", "fadein 2s");
+  $("#emo2").css("display", "contents");
+
+  $(".h111").mouseout(function(){
+              $("#emo2").css("display", "none");
+            });
+  });     
+});
 // $(document).ready(function(){  
 //     $(".ga").mouseover(function(){
 //     //   $("p").css("-webkit-animation", "fadein 2s");

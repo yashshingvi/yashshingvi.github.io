@@ -864,7 +864,6 @@ transform: scale(1)!important;
   width: 100%;
 }
 
-
 #loader-wrapper {
   position: fixed;
   top: 0;
@@ -1065,4 +1064,15 @@ path{
 }
 .navbar:hover{
   opacity: 100%;
+}
+
+#emo1{
+  background-color: black;
+  display: none;
+}
+#emo2{
+  display: none;
+}
+#emo3{
+  display: none;
 }
