@@ -44,6 +44,12 @@ function Scroll() {
   else{
   $("#foo").css("transform", `rotate(${$(window).scrollTop()/7}deg)`);
   }
+  if($(window).scrollTop()>=1440){
+    $(".navbar").css("background-color", "black");
+  }
+  else{
+    $(".navbar").css("background-color", "whitesmoke");
+  }
     // console.log($(window).scrollTop());
     // console.log("end");
     // console.log("end");
@@ -214,17 +220,17 @@ else{
     });     
 });
  
-$(document).ready(function(){  
-    $(".ga").mouseover(function(){
-    //   $("p").css("-webkit-animation", "fadein 2s");
-    $(".sti").css("visibility", "hidden");
-    $(".navbar").css("background-color", "black");
-    $(".ga").mouseout(function(){
-                $(".sti").css("visibility", "visible");
-                $(".navbar").css("background-color", "whitesmoke");
-              });
-    });     
-});
+// $(document).ready(function(){  
+//     $(".ga").mouseover(function(){
+//     //   $("p").css("-webkit-animation", "fadein 2s");
+//     $(".sti").css("visibility", "hidden");
+//     $(".navbar").css("background-color", "black");
+//     $(".ga").mouseout(function(){
+//                 $(".sti").css("visibility", "visible");
+//                 $(".navbar").css("background-color", "whitesmoke");
+//               });
+//     });     
+// });
 $('body').scrollspy({ data_offset: "20" })
 var offset = 30;
 

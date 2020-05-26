@@ -1059,3 +1059,10 @@ path{
   fill: transparent;
 } */
 /*  */
+
+.navbar{
+  opacity: 90%;
+}
+.navbar:hover{
+  opacity: 100%;
+}
