@@ -381,6 +381,7 @@ $(document).ready(function(){
 
 document.onreadystatechange = function() { 
   if (document.readyState !== "complete") { 
+    setTimeout(function(){ $("#loader-wrapper").css("background-color", "navyblue"); }, 1000);
 
   } else {
       $("body").addClass("loaded"); 
