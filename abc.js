@@ -12,25 +12,27 @@ var b = document.querySelector("text");
 // myFunction(){
 //  b.setAttribute("transform", "rotate(80,500,0)"); 
 // }
-$('window').on('touchmove', function(event) {
 
-  event.preventDefault(); 
 
-  var distanceY = window.scrollY
-  if (distanceY > 0) {
-    if(distanceY>=530 && distanceY <960){
-      $("#foo").css("transform", `rotate(${530/7}deg)`);
-  }
-  else if(distanceY>=1952) {
-    //   do nothing
-    }
-  else{
-  $("#foo").css("transform", `rotate(${distanceY/7}deg)`);
-  }
+// $('window').on('touchmove', function(event) {
 
-  }
-});
+//   event.preventDefault(); 
 
+//   var distanceY = window.scrollY
+//   if (distanceY > 0) {
+//     if(distanceY>=530 && distanceY <960){
+//       $("#foo").css("transform", `rotate(${530/7}deg)`);
+//   }
+//   else if(distanceY>=1952) {
+//     //   do nothing
+//     }
+//   else{
+//   $("#foo").css("transform", `rotate(${distanceY/7}deg)`);
+//   }
+
+//   }
+// });
+$(document.body).on('touchmove', myFunction()); 
 window.onscroll = function() {myFunction()};
 // console.log(document.documentElement.scrollTop);
 function myFunction() {
