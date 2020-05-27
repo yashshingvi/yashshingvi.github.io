@@ -280,12 +280,14 @@ else{
           $("#brandn").css("display", "contents");
           $("#emo3").css("display", "none");
           $("#hidehome").css("display", "contents");},5000);//if mouseout fails
+          $("#emo6").css("visibility", "visible");
           // mouse out from replaced emos 
           $("#emo5").mouseout(function(){
             $("#emo5").css("display", "none");
             $("#brandn").css("display", "contents");
             $("#emo3").css("display", "none");
             $("#hidehome").css("display", "contents");
+            $("#emo6").css("visibility", "hidden");
                     });
           });     
     

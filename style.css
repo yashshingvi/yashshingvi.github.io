@@ -211,7 +211,9 @@ h6{
     transform-origin: 50% 50%;
     transform: scale(0.3);
   } */
- 
+ #emo6{
+   display: none;
+ }
   #circ{
 
     /* visibility: hidden!important; */
@@ -300,6 +302,9 @@ h6{
   /* svg{
     display: none;
   } */
+  #emo6{
+    display: none;
+  }
   #circ{
 
     /* visibility: hidden!important; */
@@ -323,7 +328,7 @@ h6{
     /* letter-spacing: 10px; */
   }
   #hii{
-    font-size: 100px;
+    font-size: 80px;
   }
   .sl1{
     background-image: url("New folder/final1800x700.jpg");
@@ -372,7 +377,9 @@ h6{
 }
 /*ipad*/
 @media only screen and (min-width: 700px) and (max-width: 1024px) and (orientation : landscape){
- 
+  #emo6{
+    display: none;
+  }
   #circ{
 
     /* visibility: hidden!important; */
@@ -444,6 +451,9 @@ h6{
 }
 /*ipad*/
 @media only screen and (min-width: 700px) and (max-width: 1024px) and (orientation : portrait){
+  #emo6{
+    display: none;
+  }
   #circ{
 
     /* visibility: hidden!important; */
@@ -1110,3 +1120,17 @@ path{
   background-color: black;
   color: white;
 }
+#emo6{
+  font-size: 200px;
+  /* text-align: center; */
+  /* vertical-align: bottom; */
+  position: relative;
+ 
+  left: 500px;
+  top: 190px;
+  visibility: hidden;
+  /* bottom: 10px; */
+  /* display: inline; */
+}
+
+
