@@ -276,11 +276,12 @@ else{
           $("#brandn").css("display", "none");
           $("#emo3").css("display", "contents");
           $("#hidehome").css("display", "none");
+          $("#emo6").css("visibility", "visible");
           setTimeout(function(){ $("#emo5").css("display", "none");
           $("#brandn").css("display", "contents");
           $("#emo3").css("display", "none");
-          $("#hidehome").css("display", "contents");},5000);//if mouseout fails
-          $("#emo6").css("visibility", "visible");
+          $("#hidehome").css("display", "contents");$("#emo6").css("visibility", "hidden");},5000);//if mouseout fails
+          
           // mouse out from replaced emos 
           $("#emo5").mouseout(function(){
             $("#emo5").css("display", "none");
