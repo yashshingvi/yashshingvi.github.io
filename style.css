@@ -1104,3 +1104,7 @@ path{
 /* #svg1{
   display: inline-block;
 } */
+.fa.fa-bars{
+  background-color: black;
+  color: white;
+}
