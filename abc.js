@@ -42,7 +42,8 @@ function Scroll() {
     //and
     //start/end of scroll event for other browsers
     if($(window).scrollTop()>=530 && $(window).scrollTop() <960){
-     $("#foo").css("fill", "#4bffc3");
+      setTimeout(function(){  $("#foo").css("fill", "#4bffc3"); }, 4000);
+    
       $("#foo").css("-webkit-transform", `rotate(${480/7}deg)`);
       // $("#foo").css("-ms-transform", `rotate(${540/7}deg)`);
       $("#foo").css("transform", `rotate(${480/7}deg)`);
@@ -57,8 +58,8 @@ function Scroll() {
   }
   else if($(window).scrollTop()>=1952) {
     //   do nothing
-    $("#foo").css("transform", "rotate(1952deg)");
-    $("#foo").css("-webkit-transform", "rotate(1952deg)");
+    $("#foo").css("transform", `rotate(${1952/7}deg)`);
+    $("#foo").css("-webkit-transform", `rotate(${1952/7}deg)`);
     }
   else{
   // setTimeout(function(){
@@ -70,6 +71,7 @@ function Scroll() {
   //     "transform":`rotate(${$(window).scrollTop()/7}deg)`
   // });},100);
   $("#foo").css("fill", "white");
+  setTimeout(function(){  $("#foo").css("fill", "white"); }, 4000);
   $("#foo").css("-webkit-transform", `rotate(${$(window).scrollTop()/7}deg)`);
   // $("#foo").css("-ms-transform", `rotate(${$(window).scrollTop()/7}deg)`);
   $("#foo").css("transform", `rotate(${$(window).scrollTop()/7}deg)`);
