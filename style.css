@@ -1096,3 +1096,7 @@ path{
 #fac{
   color: white!important;
 }
+#brandn{
+  display :contents;
+  /* for emojis on same line */
+}
