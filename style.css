@@ -1042,11 +1042,9 @@ path:hover{
   }
 } */
 #foo {
+  -webkit-transition: transform 4s;
   transition: transform 4s;
   transform-origin: 100% 0%;
-  -webkit-transform: rotate(0);  /* Chrome, Opera 15+, Safari 3.1+ */
-  -ms-transform: rotate(0);  /* IE 9 */
-  transform: rotate(0);
   /* animation:spin 4s linear ; */
   
 }
