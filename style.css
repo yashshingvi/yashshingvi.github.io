@@ -238,6 +238,8 @@ h6{
   }
   #hii{
     font-size: 80px;
+    position: absolute!important;
+    /* align-self: center; */
   }
   .sl1{
     /* background-color:red; */
@@ -329,6 +331,7 @@ h6{
   }
   #hii{
     font-size: 80px;
+    position: absolute!important;
   }
   .sl1{
     background-image: url("New folder/final1800x700.jpg");
@@ -403,6 +406,7 @@ h6{
   }
   #hii{
     font-size: 130px;
+    position: absolute!important;
   }
   .sl1{
     background-image: url("New folder/final1800x700.jpg");
@@ -477,6 +481,7 @@ h6{
   }
   #hii{
     font-size: 130px;
+    position: absolute!important;
   }
   .sl1{
     background-image: url("New folder/final1800x700.jpg");
@@ -1060,6 +1065,9 @@ path:hover{
   transform-origin: 100% 0%;
   /* animation:spin 4s linear ; */
   
+}
+#foo:hover{
+  stroke: #222222;;
 }
 
 #svg1{
