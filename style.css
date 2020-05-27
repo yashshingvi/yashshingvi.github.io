@@ -228,7 +228,7 @@ h6{
     /* transform: translate(295px, 115px); */
     font-size: 63px;
     /* word-spacing: 65px; */
-    fill: black!important;
+    fill: white!important;
     stroke: white!important;
     letter-spacing: 0.3em;
     /* letter-spacing: 10px; */
@@ -315,7 +315,7 @@ h6{
     /* transform: translate(295px, 115px); */
     font-size: 63px;
     /* word-spacing: 65px; */
-    fill: black!important;
+    fill: white!important;
     stroke: white!important;
     letter-spacing: 0.3em;
     /* letter-spacing: 10px; */
@@ -387,7 +387,7 @@ h6{
     /* transform: translate(295px, 115px); */
     font-size: 63px;
     /* word-spacing: 65px; */
-    fill: black!important;
+    fill: white!important;
     stroke: white!important;
     letter-spacing: 0.3em;
     /* letter-spacing: 10px; */
@@ -458,7 +458,7 @@ h6{
     /* transform: translate(295px, 115px); */
     font-size: 63px;
     /* word-spacing: 65px; */
-    fill: black!important;
+    fill: white!important;
     stroke: white!important;
     letter-spacing: 0.3em;
     /* letter-spacing: 10px; */
@@ -1012,6 +1012,7 @@ transform: scale(1)!important;
   /* stroke: black; */
   color: white;
   fill: white;
+  /* fill: #4bffc3; */
   
   /* opacity: 65%; */
   

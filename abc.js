@@ -42,7 +42,7 @@ function Scroll() {
     //and
     //start/end of scroll event for other browsers
     if($(window).scrollTop()>=530 && $(window).scrollTop() <960){
-     
+     $("#foo").css("fill", "#4bffc3");
       // $("#foo").css("-webkit-transform", `rotate(${530/7}deg)`);
       // $("#foo").css("-ms-transform", `rotate(${530/7}deg)`);
       // $("#foo").css("transform", `rotate(${530/7}deg)`);
@@ -67,6 +67,7 @@ function Scroll() {
       "OTransform":`rotate(${$(window).scrollTop()/7}deg)`,
       "transform":`rotate(${$(window).scrollTop()/7}deg)`
   });},100);
+  $("#foo").css("fill", "white");
   // $("#foo").css("-webkit-transform", `rotate(${$(window).scrollTop()/7}deg)`);
   // $("#foo").css("-ms-transform", `rotate(${$(window).scrollTop()/7}deg)`);
   // $("#foo").css("transform", `rotate(${$(window).scrollTop()/7}deg)`);
