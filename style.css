@@ -1100,3 +1100,6 @@ path{
   display :contents;
   /* for emojis on same line */
 }
+/* #svg1{
+  display: inline-block;
+} */

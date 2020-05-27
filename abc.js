@@ -6,7 +6,7 @@
 //remove the top layer
 // setTimeout(function(){$(document).getElementsByTagName("#curve2")[0].setAttribute("transform", "rotate(50,500,0)");},10);
 //   $(".main").onepage_scroll();
-var b = document.querySelector("text"); 
+// var b = document.querySelector("text"); 
 // window.onscroll = function() {myFunction()};
 
 // myFunction(){
@@ -47,7 +47,7 @@ function Scroll() {
       // $("#foo").css("-ms-transform", `rotate(${530/7}deg)`);
       // $("#foo").css("transform", `rotate(${530/7}deg)`);
       $("#foo").css({
-        "webkitTransform":`rotate(${530/7}deg)`,
+        "-webkit-transform":`rotate(${530/7}deg)`,
         // "MozTransform":`rotate(${530/7}deg)`,
         // "msTransform":`rotate(${530/7}deg)`,
         // "OTransform":`rotate(${530/7}deg)`,
@@ -61,7 +61,7 @@ function Scroll() {
   else{
   
     $("#foo").css({
-      "webkitTransform":`rotate(${$(window).scrollTop()/7}deg)`,
+      "-webkit-transform":`rotate(${$(window).scrollTop()/7}deg)`,
       // "MozTransform":`rotate(${$(window).scrollTop()/7}deg)`,
       // "msTransform":`rotate(${$(window).scrollTop()/7}deg)`,
       // "OTransform":`rotate(${$(window).scrollTop()/7}deg)`,
