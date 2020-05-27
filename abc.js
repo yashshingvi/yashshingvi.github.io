@@ -43,34 +43,36 @@ function Scroll() {
     //start/end of scroll event for other browsers
     if($(window).scrollTop()>=530 && $(window).scrollTop() <960){
      $("#foo").css("fill", "#4bffc3");
-      // $("#foo").css("-webkit-transform", `rotate(${530/7}deg)`);
-      // $("#foo").css("-ms-transform", `rotate(${530/7}deg)`);
-      // $("#foo").css("transform", `rotate(${530/7}deg)`);
-      $("#foo").css({
-        "-webkit-transform":`rotate(${530/7}deg)`,
+      $("#foo").css("-webkit-transform", `rotate(${480/7}deg)`);
+      // $("#foo").css("-ms-transform", `rotate(${540/7}deg)`);
+      $("#foo").css("transform", `rotate(${480/7}deg)`);
+      // $("#foo").css({
+        // "-webkit-transform":`rotate(${530/7}deg)`,
         // "MozTransform":`rotate(${530/7}deg)`,
         // "msTransform":`rotate(${530/7}deg)`,
         // "OTransform":`rotate(${530/7}deg)`,
         // "transform":`rotate(${530/7}deg)`
-    });
+    // });
      
   }
   else if($(window).scrollTop()>=1952) {
     //   do nothing
+    $("#foo").css("transform", "rotate(1952deg)");
+    $("#foo").css("-webkit-transform", "rotate(1952deg)");
     }
   else{
-  setTimeout(function(){
-    $("#foo").css({
-      "-webkit-transform":`rotate(${$(window).scrollTop()/7}deg)`,
-      "MozTransform":`rotate(${$(window).scrollTop()/7}deg)`,
-      "msTransform":`rotate(${$(window).scrollTop()/7}deg)`,
-      "OTransform":`rotate(${$(window).scrollTop()/7}deg)`,
-      "transform":`rotate(${$(window).scrollTop()/7}deg)`
-  });},100);
+  // setTimeout(function(){
+  //   $("#foo").css({
+  //     "-webkit-transform":`rotate(${$(window).scrollTop()/7}deg)`,
+  //     "MozTransform":`rotate(${$(window).scrollTop()/7}deg)`,
+  //     "msTransform":`rotate(${$(window).scrollTop()/7}deg)`,
+  //     "OTransform":`rotate(${$(window).scrollTop()/7}deg)`,
+  //     "transform":`rotate(${$(window).scrollTop()/7}deg)`
+  // });},100);
   $("#foo").css("fill", "white");
-  // $("#foo").css("-webkit-transform", `rotate(${$(window).scrollTop()/7}deg)`);
+  $("#foo").css("-webkit-transform", `rotate(${$(window).scrollTop()/7}deg)`);
   // $("#foo").css("-ms-transform", `rotate(${$(window).scrollTop()/7}deg)`);
-  // $("#foo").css("transform", `rotate(${$(window).scrollTop()/7}deg)`);
+  $("#foo").css("transform", `rotate(${$(window).scrollTop()/7}deg)`);
   }
   if($(window).scrollTop()>=1440){
     $(".navbar").css("background-color", "black");
