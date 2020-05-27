@@ -59,14 +59,14 @@ function Scroll() {
     //   do nothing
     }
   else{
-  
+  setTimeout(function(){
     $("#foo").css({
       "-webkit-transform":`rotate(${$(window).scrollTop()/7}deg)`,
       // "MozTransform":`rotate(${$(window).scrollTop()/7}deg)`,
       // "msTransform":`rotate(${$(window).scrollTop()/7}deg)`,
       // "OTransform":`rotate(${$(window).scrollTop()/7}deg)`,
       // "transform":`rotate(${$(window).scrollTop()/7}deg)`
-  });
+  });},100);
   // $("#foo").css("-webkit-transform", `rotate(${$(window).scrollTop()/7}deg)`);
   // $("#foo").css("-ms-transform", `rotate(${$(window).scrollTop()/7}deg)`);
   // $("#foo").css("transform", `rotate(${$(window).scrollTop()/7}deg)`);
