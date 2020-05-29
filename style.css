@@ -12,6 +12,7 @@ body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+
 }
 .container-flex{
   background-color:whitesmoke;
@@ -51,7 +52,11 @@ body
         margin: 20px 20px;
 }
 .jumbotron{
-  background-color:black;
+  /* background-color:black; */
+  /* background-color: #003b27; */
+  /* height: 10px!important; */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  background-color: transparent;
 }
 h3{
   padding: 1em;
@@ -136,6 +141,24 @@ h6{
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+@keyframes bord{
+  0% {border-radius: 0px;
+  opacity: 0;}
+  100% {border-radius:300px;
+  opacity: 1;}
+
+}
+@-webkit-keyframes bord {
+  from {
+      opacity: 0;
+      border-radius: 0px;
+  }
+
+  to {
+      opacity: 1;
+      border-radius:300px;
+  }
+} 
 @media all and (min-width: 1025px)
 {
   #foo{
@@ -168,6 +191,14 @@ h6{
   background-attachment: fixed;
   background-position: center;
   height: 540px;
+  /* box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 3px 1px -2px rgba(0,0,0,0.10), 0 1px 5px 0 rgba(0,0,0,0.2); */
+  /* box-shadow:10px 10px 10px 10px white; */
+  /* border-radius: 300px; */
+    /* animation-name: fadeIn; */
+    /* animation-name: bord; */
+   -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+            border-radius: 300px;
 }
 .sl2{
   
@@ -176,11 +207,38 @@ h6{
   background-attachment: fixed;
   background-position: center;
   height: 500px;
+  /* border-radius: 300px; */
   /* background-size: cover; */
 }
+.sl3{
+  
+  /* The image used */
+  background-image: url("New folder/final2.jpg");
+  background-color: black;
+  background-attachment: fixed;
+  background-position: center;
+  height: 500px;
+  border-radius: 300px;
+  background-size: cover;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+} 
+#bord{
+  border-radius: 300px;
+  /* background-color: black; */
+  background-color: #222222;
+  /* box-shadow: 10px 10px black; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 50px;
+  border-color: white;
+  border-width: 3px;
+  box-shadow: beige;
+  padding: 100px;
+}
 #hom{
-  padding-top: 250px;
-  padding-bottom: 250px;
+  padding-top: 180px;
+  padding-bottom: 200px;
+  /* background-color: #222222; */
 }
 .h111{
   font-size: 80px;
@@ -191,12 +249,12 @@ h6{
 .h112{
   margin-top: 210px;
 }
-.homec{
+/* .homec{
   transition: transform 1s;
 }
 .homec:hover{
-  transform: scale(1.3);
-}
+  transform: scale(1.1);
+} */
 }
 /* @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) { 
   .sl1{
@@ -547,11 +605,12 @@ h6{
 
 
 span{
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
+  /* white-space:nowrap; */
   margin-left: auto;
   margin-right: auto;
   height: auto;
-  display: block;
+  /* display: inline-block; */
 }
 .jumbotron{
   /* visibility: hidden; */
@@ -665,7 +724,8 @@ h5{
 .homec{
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 17px;
-  color: #4bffc3!important;
+  color: #4bffc3;
+  /* color: white; */
   /* color: #007bff!important; */
   
 }
@@ -1145,6 +1205,40 @@ path{
   visibility: hidden;
   /* bottom: 10px; */
   /* display: inline; */
+  
 }
 
+
+/* .col-md-5 { */
+  /* -webkit-animation-name: fadeIn; */
+            /* animation-name: fadeIn; */
+  /* -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+}*/
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+} 
+@-webkit-keyframes fadeIn {
+  from {
+      opacity: 0
+  }
+
+  to {
+      opacity: 1
+  }
+} 
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+} 
+@-webkit-keyframes fadeOut {
+  from {
+      opacity: 1
+  }
+
+  to {
+      opacity: 0
+  }
+} 
 
