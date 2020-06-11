@@ -1173,7 +1173,9 @@ margin: 0;
 /* .navbar:hover{
   opacity: 100%;
 } */
-
+.brandimg{
+  height: 56px;
+}
 #emo1{
   background-color: black;
   display: none;
