@@ -5,4 +5,5 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 #RewriteRule ^([^\.]+)$ $1.html [NC, L]
 #RewriteEngine On
-RewriteRule ^work$ $Work%20experience.html [NC, L]
+#RewriteRule ^work$ $Work%20experience.html [NC, L]
+RewriteRule ^/?$ $index.html
