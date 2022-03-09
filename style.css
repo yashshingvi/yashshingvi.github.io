@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;800&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 body
 {
     width: 100%;
@@ -50,6 +51,11 @@ body
 #scr{
   color: aquamarine;
   font-weight: normal;
+  
+
+}
+#code-font{
+  font-family: 'Inconsolata', monospace;
 }
 /* h2 {
   margin: 50px 0px;
@@ -132,7 +138,9 @@ h3{
   transform: scale(1.5);
   
 }
-
+#highlight{
+  color: aquamarine;
+}
 h6{
   text-align: center;
   opacity: 90%;
@@ -1231,6 +1239,7 @@ margin: 0;
 }
 #intro-font{
   letter-spacing: 1px;
+  text-align: center;
 }
 
 
