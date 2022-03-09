@@ -1217,6 +1217,9 @@ margin: 0;
   /* display: inline; */
   
 }
+#intro-font{
+  letter-spacing: 1px;
+}
 
 
 /* .col-md-5 { */
