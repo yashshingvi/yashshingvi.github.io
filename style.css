@@ -40,7 +40,17 @@ body
   padding-left:15px;
   padding-right:15px;
 }
-
+#intr{
+  /* height: 50px; */
+  color: white;
+  font-size: 90px;
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif!important;
+}
+#scr{
+  color: aquamarine;
+  font-weight: normal;
+}
 /* h2 {
   margin: 50px 0px;
   text-align: center;
@@ -187,10 +197,10 @@ h6{
 }
 .sl1{
 
-  background-image: url("New folder/final1.jpg");
+  /* background-image: url("New folder/final1.jpg"); */
   background-attachment: fixed;
   background-position: center;
-  height: 540px;
+  /* height: 540px; */
   /* box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 3px 1px -2px rgba(0,0,0,0.10), 0 1px 5px 0 rgba(0,0,0,0.2); */
   /* box-shadow:10px 10px 10px 10px white; */
   /* border-radius: 300px; */
@@ -307,9 +317,10 @@ h6{
   }
   .sl1{
     /* background-color:red; */
-    background-image: url("New folder/final1400x500.jpg");
-    height: 500px;
+    /* background-image: url("New folder/final1400x500.jpg"); */
+    /* height: 500px; */
   }
+
   .sl2{
     
     /* The image used */
@@ -398,10 +409,10 @@ h6{
     position: absolute!important;
   }
   .sl1{
-    background-image: url("New folder/final1800x700.jpg");
+    /* background-image: url("New folder/final1800x700.jpg"); */
     /* background-attachment: fixed;
     background-position: center; */
-    height: 600px;
+    /* height: 600px; */
   }
   .sl2{
     
@@ -473,10 +484,10 @@ h6{
     position: absolute!important;
   }
   .sl1{
-    background-image: url("New folder/final1800x700.jpg");
+    /* background-image: url("New folder/final1800x700.jpg"); */
     /* background-attachment: fixed;
     background-position: center; */
-    height: 600px;
+    /* height: 600px; */
   }
   .sl2{
     
@@ -548,10 +559,10 @@ h6{
     position: absolute!important;
   }
   .sl1{
-    background-image: url("New folder/final1800x700.jpg");
+    /* background-image: url("New folder/final1800x700.jpg"); */
     /* background-attachment: fixed;
     background-position: center; */
-    height: 600px;
+    /* height: 600px; */
   }
   .sl2{
     
@@ -1031,6 +1042,7 @@ transform: scale(1)!important;
   top:0;
   left: 0;
 } */
+
 .sl1,#svg1{
   position: relative;
   /* left :100%; */
