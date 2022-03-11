@@ -276,11 +276,14 @@ h6{
   background-color: #222222;
   /* box-shadow: 10px 10px black; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 50px;
+  /* padding: 50px; */
   border-color: white;
   border-width: 3px;
   box-shadow: beige;
-  padding: 100px;
+  /* padding: 50px; */
+  padding-left: 5%;
+  padding-right: 5%;
+  /* margin: auto; */
 }
 #hom{
   padding-top: 180px;
@@ -1270,6 +1273,14 @@ margin: 0;
   font-family: 'Inconsolata', monospace;
   letter-spacing: 1px;
   text-align: center;
+  /* width: 90%; */
+  margin: auto;
+  margin-top: auto;
+  
+}
+#intro-align{
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 
