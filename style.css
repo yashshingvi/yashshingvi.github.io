@@ -46,7 +46,36 @@ body
   color: white;
   font-size: 90px;
   text-align: center;
-  font-family: 'Merriweather Sans', sans-serif!important;
+  /* font-family: 'Merriweather Sans', sans-serif; */
+  font-family: 'Inconsolata', monospace;
+      animation-name: shakes;
+      -webkit-animation-duration: 50s;
+      animation-duration: 50s;
+      animation-iteration-count: infinite;
+}
+@keyframes shakes {
+  0% { transform: translate(1px, 1px) rotate(0deg);
+      color: rgb(255, 179, 117); }
+  10% { transform: translate(-1px, -2px) rotate(0deg);
+    color: rgb(255, 182, 255); }
+  20% { transform: translate(-3px, 0px) rotate(0deg);
+    color: rgb(255, 255, 176); }
+  30% { transform: translate(3px, 2px) rotate(0deg);
+    color: rgb(255, 158, 158); }
+  40% { transform: translate(1px, -1px) rotate(0deg); 
+    color: rgb(255, 168, 241);}
+  50% { transform: translate(-1px, 2px) rotate(0deg);
+    color: rgb(255, 161, 161);  }
+  60% { transform: translate(-3px, 1px) rotate(0deg); 
+    color: rgb(255, 192, 133);}
+  70% { transform: translate(3px, 1px) rotate(0deg);
+    color: rgb(255, 182, 182);  }
+  80% { transform: translate(-1px, -1px) rotate(0deg);
+    color: rgb(137, 245, 122); }
+  90% { transform: translate(1px, 2px) rotate(0deg);
+    color: rgb(167, 253, 193); }
+  100% { transform: translate(1px, -2px) rotate(0deg); 
+    color: rgb(87, 174, 201);}
 }
 #scr{
   color: aquamarine;
@@ -1238,6 +1267,7 @@ margin: 0;
   
 }
 #intro-font{
+  font-family: 'Inconsolata', monospace;
   letter-spacing: 1px;
   text-align: center;
 }
