@@ -325,6 +325,9 @@ h6{
     transform-origin: 50% 50%;
     transform: scale(0.3);
   } */
+  #intr{
+    font-size: 60px;
+  }
  #emo6{
    display: none;
  }
